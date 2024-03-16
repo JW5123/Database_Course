@@ -1,5 +1,0 @@
-build
-*.dSYM
-.DS_Store
-.vscode
-*exe

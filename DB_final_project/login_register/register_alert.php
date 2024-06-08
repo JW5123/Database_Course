@@ -38,7 +38,7 @@ if (isset($_POST["submit"])) {
     }
     require_once "../Database/connDB.php";
 
-    $sql = "SELECT * FROM users";    //table users要改
+    $sql = "SELECT * FROM users";
     $result = mysqli_query($conn, $sql);
     $rowCount = mysqli_num_rows($result);
     if ($rowCount > 0) {
@@ -50,7 +50,7 @@ if (isset($_POST["submit"])) {
             echo "<div id='alertmsg' class='alert alert-danger'>$error</div>";
         }
     }else{
-        $sql = "INSERT INTO users (id, name, department, email, password) VALUES ( ?, ?, ?, ?, ? )";    //屬性名稱要改
+        $sql = "INSERT INTO users (id, name, department, email, password) VALUES ( ?, ?, ?, ?, ? )";
         $stmt = mysqli_stmt_init($conn);
         $prepareStmt = mysqli_stmt_prepare($stmt,$sql);
         if ($prepareStmt) {

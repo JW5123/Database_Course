@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+
+ul { 
+    list-style: none; 
+    padding-left: 0;
+}
+
+.head-icon {
+    width: 200px;
+    height: auto;
+    background-size: cover;
+}
+
+.login-button {
+    background-color: #2894FF;
+    color: #fff;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #97CBFF;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active:hover{
+    color: #2894FF;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #2894FF;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover:before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.bg-image {
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../image/FCU-校門.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 400px; */
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../image/FCU-door.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    /* padding-bottom: 7rem; */
+    color: rgb(255, 255, 255);
+    /* padding-top: 16rem; */
+}
+
+
+/* 
+.e-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .75rem;
+    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: .75rem;
+    padding-right: var(--bs-gutter-x, .75rem);
+    width: 100%;
+} */
+
+.e-master .e-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4em;
+    /* margin-bottom: 1.8rem; */
+    text-align: center;
+}
+
+.e-teacherImg {
+    border-radius: 10px;
+    width: 260px;
+}
+
+
+.e-teacher-intro h1{
+    font-size: 1.8rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    /* margin-bottom: 25px; */
+}
+
+.e-mesage h6 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fa-custom-width {
+    width: 18px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.intro-cont {
+    font-size: 17px;
+    text-indent: 2em;
+    text-align: justify;
+    overflow-wrap: break-all;
+}
+
+.page-section {
+    padding: 4rem 0;
+}
+
+.footer-width {
+    width: 1cm;
+    text-align: center;
+}
+
+.foo-message {
+    color: #fff;
+}
+
+
+.foo-fcu-icon {
+    filter:brightness(100);
+    width: 15rem;
+}
+
+
+
+/* course.php */
+.page-header {
+    background-color: #212529;
+    /* margin: 0 auto; */
+}
+.inner {
+    height: 80px;
+    line-height: 80px;
+    padding-left: 40px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.tab-container {
+    margin: 60px;
+    padding: 20px;
+    /* background-color: beige; */
+}
+
+.tab-interview {
+    padding: 50px;
+    background-color:#f0f0f0;
+    border-radius: 30px;
+}
+
+:target{
+    scroll-margin-top: 160px;
+}
+
+
+.mycontainer {
+    width: 90%;
+    margin: 1.5rem auto;
+}
+
+.mycontainer table {
+    margin: 1.5rem auto;
+}
+
